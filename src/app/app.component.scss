@@ -60,25 +60,18 @@ $font-padrao: "Montserrat", sans-serif;
     opacity: 30%;
   }
 
-  a.icon-linkedin {
-    background-image: url("../assets/imgs/linkedin.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  .icon-social {
+    display: flex;
+    justify-content: center;
     opacity: 30%;
     height: 28px;
     margin-top: 12px;
     margin-bottom: 12px;
-  }
-
-  a.icon-github {
-    background-image: url("../assets/imgs/github.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 30%;
-    height: 28px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
+    &:hover{
+      opacity: 100%;
+      transition: ease-in 0.2s;
+    }
+  }   
 }
 
 .main {
