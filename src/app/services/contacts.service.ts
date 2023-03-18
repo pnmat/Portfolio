@@ -6,7 +6,7 @@ import Contact from '../models/contact'
   providedIn: 'root'
 })
 export class ContactsService {
-apiUrl = "http://localhost:5090/contacts"
+apiUrl = "https://portfolio-api-app1.azurewebsites.net/contacts"
 constructor(private http: HttpClient) { }
 
   addContact(contact: Contact){

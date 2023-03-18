@@ -67,17 +67,20 @@ $font-padrao: "Montserrat", sans-serif;
     height: 28px;
     margin-top: 12px;
     margin-bottom: 12px;
-    &:hover{
+    &:hover {
       opacity: 100%;
       transition: ease-in 0.2s;
     }
-  }   
+  }
 }
 
 .main {
   background-image: url("../assets/imgs/background.png");
   background-repeat: no-repeat;
   height: 100vh;
+}
+.mail {
+  text-decoration: none;
 }
 
 .content {
@@ -107,6 +110,10 @@ $font-padrao: "Montserrat", sans-serif;
     color: white;
     border: 1px solid #38b6ff;
     cursor: pointer;
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 
   .img {
@@ -148,6 +155,12 @@ $font-padrao: "Montserrat", sans-serif;
     margin-bottom: 8px;
   }
 
+  .levels {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .loading {
     position: relative;
     display: inline-block;
@@ -170,7 +183,7 @@ $font-padrao: "Montserrat", sans-serif;
 
   .loading.backend:after {
     background-color: #38b6ff;
-    width: 10%;
+    width: 0%;
   }
 
   .loading.frontend:after {
@@ -185,7 +198,7 @@ $font-padrao: "Montserrat", sans-serif;
 
   .loading.mobile:after {
     background-color: #00ffe0;
-    width: 15%;
+    width: 20%;
   }
 }
 
